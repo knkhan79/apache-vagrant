@@ -33,7 +33,7 @@
   LogLevel warn
   ServerSignature Off
 <% if @access_log -%>
-  CustomLog <%= @access_log_destination %> <%= @_access_log_format %>
+  CustomLog <%= @access_log_destination %> <%= @my_access_log_format %>
 <% end -%>
 <%= scope.function_template(['apache/vhost/_block.erb']) -%>
 <%= scope.function_template(['apache/vhost/_proxy.erb']) -%>
